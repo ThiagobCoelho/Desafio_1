@@ -13,11 +13,13 @@
     padding-top: 200px;
     padding-left: 60px;
     font-size: 60px;
+    font-weight: 600;
 }
 #intro-sub{
     padding-top: 20px;
     padding-left: 60px;
     font-size: 20px;
+    font-weight: 500;
 }
 
 /* NUMBERS */
@@ -32,11 +34,13 @@
 
 /* Classes reutilizadas em outras partes do HTML */
 .bigger{
-    font-size: xx-large;
+    font-size: 40px;
+    font-weight: 600;
 }
 .smaller{
-    font-size: larger;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: 400;
+
 }
 
 /* DESCRIPTION */
@@ -44,6 +48,7 @@
     background-color: #f5f5f5;
     display: grid;
     grid-auto-flow: column;
+    justify-content: space-around;
 }
 
 #desc-text{
@@ -52,18 +57,17 @@
 
 #desc-title{
     font-weight: 500;
-    margin-left: 60px;
     padding-bottom: 30px;
+    font-size: 40px;
 }
 #desc-sub{
-    margin-left: 60px;
+    font-size: 24px;
+    font-weight: 300;
 }
 
 #loft-img{
-    width: 490px;
-    height: 595px;
-    margin: 50px;
-    padding-left: 30px;
+    width: 450px;
+    height: 600px;
     border-radius: 30px;
 }
 
@@ -77,23 +81,32 @@
 #form-title{
     padding-top: 80px;
     padding-bottom: 50px;
-    font-size: xx-large;
+    font-size: 32px;
+    font-weight: 700;
 }
 
 .in{
-    width: 500px;
-    height: 70px;
-    font-weight: 500;
+    width: 508px;
+    height: 72px;
     margin: 20px;
     padding-left: 20px;
     border: 0;
     border-radius: 10px;
 }
 
+.in::placeholder{
+    font-family: 'Raleway','Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.3);
+}
+
 .butt{
-    font-weight: 600;
-    width: 250px;
-    height: 70px;
+    font-family: 'Raleway', 'Inter', sans-serif;
+    font-weight: 700;
+    width: 286px;
+    height: 74px;
+    font-size: 30px;
     text-align: center;
     margin-top: 80px;
     margin-bottom: 80px;
@@ -102,12 +115,4 @@
     border: 0;
     border-radius: 10px;
     cursor: pointer;
-}
-
-.butt:hover{
-    background-color: #e1881b;
-    color: white;
-    transform: translateY(-5px);
-    transition-duration: 0.5s;
-    box-shadow: 0px 15px 20px #804e11c7;
 }
